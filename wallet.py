@@ -10,3 +10,8 @@ class Wallet:
     def deposit(self, amount):
         self.balance = self.balance + amount
         return  f'you deposited {amount} your balance is {self.balance}'
+    
+def firstuser():
+    mywallet = Wallet("Ishmo", 100000000)
+    message = mywallet.deposit(200000000)
+    return message
